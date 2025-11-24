@@ -1,0 +1,1 @@
+yt-dlp -a videos.txt -o "videos/%(id)s.%(ext)s" --download-archive descargados.log
