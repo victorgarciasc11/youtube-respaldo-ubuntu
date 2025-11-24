@@ -1,1 +1,11 @@
+### descarga de youtube
+
 yt-dlp -a videos.txt -o "videos/%(id)s.%(ext)s" --download-archive descargados.log
+
+### m3u8 to mp4
+
+## Instrucciones para convertir un archivo m3u8 local en mp4
+ffmpeg -i "https://example.com/live/stream.m3u8" -c copy -bsf:a aac_adtstoasc livestream.mp4
+
+## Instrucciones para convertir un archivo m3u8 local en mp4
+ffmpeg -i "C:/Videos/my_playlist.m3u8" -c copy -bsf:a aac_adtstoasc converted_video.mp4
